@@ -1,0 +1,9 @@
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\bin\Debug\myFirstDextopApp.exe.config
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\bin\Debug\myFirstDextopApp.exe
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\bin\Debug\myFirstDextopApp.pdb
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.csprojResolveAssemblyReference.cache
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.Form1.resources
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.Properties.Resources.resources
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.csproj.GenerateResource.Cache
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.exe
+E:\DOT NET\BITM\Practice code BITM(Dot Net)\myFirstDextopApp\myFirstDextopApp\obj\Debug\myFirstDextopApp.pdb
