@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Twia.ReSharper</id>
+    <version>9.0.0</version>
+    <title>JetBrains.Annotations from ReSharper 9.</title>
+    <authors>Daniël te Winkel</authors>
+    <owners>Daniël te Winkel</owners>
+    <projectUrl>http://www.jetbrains.com/resharper/help/Code_Analysis__Code_Annotations.html</projectUrl>
+    <iconUrl>http://www.twia.nl/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the JetBrains.Resharper assembly with the annotations from the ReSharper Annotated Framework. The annotations are for use in combination with JetBrains ReSharper. See the project URL on how to use the annotations.
+The annotations are taken from ReSharper 9.
+Source code can be annotated with the shared annotations  between the two versions such as [NotNull] and [CanBeNull], and can be double annotated with the [AssertionMethod] for ReSharper 6 and 9 and the [ContractAnnotation] for ReSharper 7 and above.
+As of ReSharper 9 the annotation attributes are all marked with the [Conditional("JETBRAINS_ANNOTATIONS")] attribute. As a result, by default the annotations do not end up in the metadata of the compiled assembly, and no reference is added to the JetBrains.Annotations assembly. To keep the annotations in the output, define the 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your project.
+JetBrains provides the NuGet package with ID JetBrains.Annotations (https://www.nuget.org/packages/JetBrains.Annotations/) which contains the same annotations, and should be considered as a good alternative to this package. Both packages only differ in the targets they provide builds for. The Twia.ReSharper package provides builds for .NET 2.0 (net20) and .NET 4.0 (net40). The JetBrans.Annotations package provides a .NET 2.0 (net20) and a few portable library builds.
+Finally, I have no links to JetBrains what so ever, except that I am a happy user of ReSharper.</description>
+    <summary>JetBrains.Annotations as taken from from ReSharper 9</summary>
+    <releaseNotes>Versions:
+      9.0.0 - Added ReSharper 9 support. 
+              JetBrains brought the annotation removed in ReSharper 7 back in ReSharper 9. 
+              Loads of other annotations attributes added.
+              Version in sync with latest ReSharper version the annotations are taken from.
+              Removed Apache license, as it is not mentioned anymore in the sources, and as no ReSharper 6 sources are used anymore.
+      1.1.0 - Support for ReSharper 6 and ReSharper 7.</releaseNotes>
+    <copyright>Copyright © 2014 Daniël te Winkel, All rights reserved</copyright>
+    <tags>resharper annotations jetbrains twia</tags>
+  </metadata>
+</package>

@@ -1,0 +1,28 @@
+﻿@model HelloMVC.Models.Item
+
+@{
+    Layout = null;
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Save</title>
+</head>
+<body>
+    <div> 
+        <div><h1>Item Information</h1></div>
+        <div><p>@ViewBag.Message1</p></div>
+        <div><p>@ViewBag.Message</p></div>
+        <div><p>@ViewBag.Message3</p></div>
+        <form  method="post">
+            <input type="text" id="name" name="name"  placeholder="Item Name"/><br />
+            <input type="text" id="price" name="unitprice" placeholder="Item Price" /><br />
+            <input type="submit" value="Save" />           
+        </form>
+    </div>
+</body>
+</html>

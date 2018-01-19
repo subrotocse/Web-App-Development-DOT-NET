@@ -1,0 +1,61 @@
+﻿@model HtmlHelperDataAnnotation.Models.Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Save</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Name)</td>
+                    <td>@Html.TextBoxFor(x => x.Name)</td>
+                    <td>@Html.ValidationMessageFor(x=>x.Name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Email)</td>
+                    <td>@Html.TextBoxFor(x => x.Email)</td>
+                    <td>@Html.ValidationMessageFor(x=>x.Email)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Password)</td>
+                    <td>@Html.PasswordFor(x => x.Password)</td>
+                    <td>@Html.ValidationMessageFor(x => x.Password)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Department)</td>
+                    <td>@Html.DropDownListFor(x => x.Department,new SelectList(ViewBag.Departments,"Code","Name"))</td>
+                    <td>@Html.ValidationMessageFor(x => x.Department)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m=>m.Gender)</td>
+                    <td>@Html.RadioButtonFor(m => m.Gender, "Male") Male</td> 
+                    <td>@Html.RadioButtonFor(n => n.Gender, "Female") Female</td>
+                    <td>@Html.ValidationMessageFor(x => x.Gender)</td> 
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m=>m.Address)</td>
+                    <td>@Html.TextAreaFor(m=>m.Address)</td>
+                    <td>@Html.ValidationMessageFor(x => x.Address)</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register" name="register" /></td>
+                </tr>
+            </table>           
+        }
+    </div>   
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
